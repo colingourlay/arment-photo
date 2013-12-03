@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	   <meta charset='utf-8'>
+	   <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+	   <title>How to post photos on the internet</title>
+       <link rel="stylesheet" type="text/css" href="css/app.css" />
+    </head>
+    <body>
+        <div id="photo" class="photo">
+            <div class="image">
+                <img src="files/image.jpg" width="640" height="427" />
+                <div class="overlay"></div>
+                <div class="overlay-2"></div>
+                <div class="caption">why do they always<br>say goodbye</div>
+            </div>
+        </div>
+        <div class="steps">
+            <div id="step" class="step">
+                Take a boring photo with your 50mm f/1.8 prime wide open, with a small sliver of your subject in focus. Leave large portions of the subject outside of the focal plane, regardless of how important or interesting they are.
+            </div>
+            <button id="prev" class="prev hidden">Back</button>
+            <button id="next" class="next">Next</button>
+        </div>
+        <script src="js/app.js"></script>
+        <script>
+          (function (w, d, s) {
+            function go() {
+              var js,
+                  fjs = d.getElementsByTagName(s)[0],
+                  loadScript = function (url, id) {
+                    if (d.getElementById(id)) { return; }
+                    js = d.createElement(s);
+                    js.src = url;
+                    js.id = id;
+                    fjs.parentNode.insertBefore(js, fjs);
+                  };
+              w._gaq = [["_setAccount", "UA-7640844-1"], ["_trackPageview"]];
+              loadScript("//www.google-analytics.com/ga.js", "google-analytics");
+            }
+            if (w.addEventListener) { w.addEventListener("load", go, false); }
+            else if (w.attachEvent) { w.attachEvent("onload", go); }
+          })(window, document, "script");
+        </script>
+    </body>
+</html>
